@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samo</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!----- HEADER ----->
+        <header class="header" id="header">
+            <div class="header__container">
+                <img class="header__logo" src="images/header-logo.svg" alt="logo">
+                <div class="header__burgerIcon">
+                    <span class="menuText">МЕНЮ</span>
+                    <div class="menuIcon">
+                        <img src="images/close.svg" alt="close">
+                    </div>
+                </div>
+                <div class="header__menu header__menu-mobile">
+                    <img class="header__logo-menu" src="images/header-logo.svg" alt="logo">
+                    <a href="#" class="header__btn-menu btn open-popup">Придбати курс</a>
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item link">
+                            <a class="header__menu-link" href="#course-bl">Про курс</a>
+                        </li>
+                        <li class="header__menu-item link">
+                            <a class="header__menu-link" href="#points-bl">Для кого</a>
+                        </li>
+                        <li class="header__menu-item link">
+                            <a class="header__menu-link" href="#practices-bl">Спробувати техніки</a>
+                        </li>
+                        <li class="header__menu-item link">
+                            <a class="header__menu-link" href="#feedback-bl">Відгуки</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="header__btn btn open-popup">Придбати курс</a>
+            </div>
+        </header>
+        <!----- Page Section ----->
+        <div class="page">
+            <!----- PRIMARY SECTION ----->
+            <section class="primary" id="primary-bl">
+                <div class="primary__container">
+                    <h1 class="primary__headline">
+                        Курс Зняття Стресу та Тривожності
+                    </h1>
+                    <p class="primary__subtitle">
+                        Від професійних психологів-практиків
+                    </p>
+                    <div class="primary__buttons">
+                        <a href="#course-bl" class="primary__blueBtn btn">Детальніше про курс</a>
+                        <a href="#program-bl" class="primary__whiteBtn btn">Програма курсу</a>
+                    </div>
+                    <div class="primary__details">
+                        <span class="primary__details_num">30</span>
+                        <p class="primary__details_desc">Дієвих <br> технік</p>
+                        <span class="primary__details_pic"></span>
+                        <span class="primary__details_num">7</span>
+                        <p class="primary__details_desc">Хвилин <br> на день</p>
+                    </div>
+                    <img src="/images/primary-image.png" alt="people" class="primary__img">
+                    <img src="/images/primary-mob.png" alt="people" class="primary__img_mob">
+                    <div class="primary__info">
+                        <div class="primary__info_item">
+                            <span class="primary__info_pic pic-1"></span>
+                            <h4 class="primary__info_title">Формат</h4>
+                            <p class="primary__info_text">
+                                Курс надається у записі. Кожне відео присвячено одній з технік для покращення емоційного
+                                стану «тут і зараз»
+                            </p>
+                        </div>
+                        <div class="primary__info_item">
+                            <span class="primary__info_pic pic-2"></span>
+                            <h4 class="primary__info_title">Практика</h4>
+                            <p class="primary__info_text">
+                                Під час курсу Ви спробуєте різні інструменти для подолання тривожності та дізнаєтеся, що
+                                допомагає саме Вам.
+                            </p>
+                        </div>
+                        <div class="primary__info_item">
+                            <span class="primary__info_pic pic-3"></span>
+                            <h4 class="primary__info_title">Результат</h4>
+                            <p class="primary__info_text">
+                                За 30 днів Ви натренуєтесь знімати розумову та фізичну напругу, напрацюєте стійку звичку
+                                до розслаблення та відновлення.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!----- COURSE SECTION ----->
+            <section class="course" id="course-bl">
+                <div class="course__container">
+                    <h2 class="course__heading">Про курс</h2>
+                    <div class="course__video video-container">
+                        <video class="video-frame" id="videoFrame-1" controls controlsList="nodownload" src="/images/about-course.mp4"
+                            allowfullscreen="allowfullscreen" poster="images/poster.jpeg">
+                        </video>
+                        <button class="play-button" id="playButton-1"></button>
+                    </div>
+                    <div class="course__info">
+                        <div class="course__info_block info-block">
+                            <div class="course__info_item info-item">
+                                <div class="course__info_num info-item__num">
+                                    <span>1</span>
+                                </div>
+                                <h4 class="info-item__title">30 днів - 30 відео з практиками.</h4>
+                                <p class="course__item_text info-item__text">Потужна емоційна підтримка, що завжди під
+                                    рукою.</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-item__num">
+                                    <span>2</span>
+                                </div>
+                                <h4 class="info-item__title">Можна виконувати разом з ведучою</h4>
+                                <p class="course__item_text info-item__text">100% чистої практики в кожному відео.</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-item__num">
+                                    <span>3</span>
+                                </div>
+                                <h4 class="info-item__title">Всього 7 хвилин на день</h4>
+                                <p class="course__item_text info-item__text">Проходьте курс в будь-якому місці в
+                                    будь-який час.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!----- PROFIT SECTION ----->
+            <section class="profit" id="profit-bl">
+                <div class="profit__container">
+                    <div class="profit__headline">
+                        <h2 class="profit__heading">Переваги</h2>
+                        <a href="#" class="profit__blueBtn btn open-popup">Розпочати курс</a>
+                    </div>
+                    <div class="profit__info">
+                        <div class="profit__info_block info-block">
+                            <div class="profit__info_item info-item">
+                                <div class="profit__info_num info-item__num">
+                                    <span>1</span>
+                                </div>
+                                <h4 class="profit__info_title info-item__title">30 простих та дієвих інструментів</h4>
+                                <p class="profit__info_text info-item__text">
+                                    «Курс зняття стресу та тривожності» — це 30 простих та дієвих інструментів для
+                                    покращення Вашого емоційного стану.
+                                </p>
+                            </div>
+                            <div class="profit__info_item info-item">
+                                <div class="profit__info_num info-item__num">
+                                    <span>2</span>
+                                </div>
+                                <h4 class="profit__info_title info-item__title">Концентрат найдієвішого</h4>
+                                <p class="profit__info_text info-item__text">
+                                    В курсі зібрано концентрат найдієвішого: дихальні, рухові, звукові, тактильні та
+                                    тілесні техніки, медитації та візуалізації.
+                                </p>
+                            </div>
+                            <div class="profit__info_item info-item">
+                                <div class="profit__info_num info-item__num">
+                                    <span>3</span>
+                                </div>
+                                <h4 class="profit__info_title info-item__title">Науково доведені практики</h4>
+                                <p class="profit__info_text info-item__text">Техніки EMDR (Eye Movement Desensitization
+                                    and Reprocessing), техніка EFT (Emotional Freedom Technique), та багато інших.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="profit__blueBtn_mob btn open-popup">Розпочати курс</a>
+                </div>
+            </section>
+            <!----- POINTS SECTION ----->
+            <section class="points" id="points-bl">
+                <div class="points__container">
+                    <h2 class="points__heading">Як дізнатися, що <br> вам це потрібно?</h2>
+                    <div class="points__cards_wrapp">
+                        <div class="points__white_card points-card">
+                            <h3 class="points__white_title">До курсу</h3>
+                            <p class="points__white_subtitle">
+                                Наслідки тривалого стресу буває важко розпізнати. Ось декілька розповсюджених проявів:
+                            </p>
+                            <ul class="points__list">
+                                <li class="points__elem red-elem">Тривожуся про кожну дрібницю</li>
+                                <li class="points__elem red-elem">Потерпаю від емоційних гойдалок</li>
+                                <li class="points__elem red-elem">Боюся того, що раніше не турбувало</li>
+                                <li class="points__elem red-elem">Відчуваю розумову та фізичну напругу</li>
+                                <li class="points__elem red-elem">Швидко втомлююсь, мало встигаю</li>
+                                <li class="points__elem red-elem">Не можу заснути та/чи просинаюся посеред ночі</li>
+                                <li class="points__elem red-elem">Відчуваю розгубленість щодо майбутнього</li>
+                            </ul>
+                            <div class="points__note">
+                                <div class="points__note-pic">
+                                    <img src="images/girl-icon.svg" alt="girl">
+                                </div>
+                                <p class="points__note-desc">
+                                    Якщо Вам знайомо щось із цього списку (або все), цей курс стане в пригоді та буде
+                                    сприяти відновленню.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="points__blue_card points-card">
+                            <h3 class="points__blue_title">Після курсу</h3>
+                            <p class="points__blue_subtitle">
+                                Чи змінюється Ваш стан після щоденних практик? Ось декілька сигналів, щоб оцінити
+                                ефективність:
+                            </p>
+                            <ul class="points__list">
+                                <li class="points__elem green-elem">Відчуваю себе спокійніше</li>
+                                <li class="points__elem green-elem">Можу впоратися зі своїми емоціями</li>
+                                <li class="points__elem green-elem">Знаю як собі зарадити, коли страшно</li>
+                                <li class="points__elem green-elem">Можу глибоко розслабитися</li>
+                                <li class="points__elem green-elem">Краще зосереджуюсь та більше встигаю</li>
+                                <li class="points__elem green-elem">Легше засинаю та глибше сплю</li>
+                                <li class="points__elem green-elem">Швидше адаптуюся до нових обставин</li>
+                            </ul>
+                            <a href="#" class="points__btn btn open-popup">Розпочати курс</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!----- PROPOSAL SECTION ----->
+            <section class="proposal" id="proposal-bl">
+                <div class="proposal__container">
+                    <div class="proposal__content">
+                        <h5 class="proposal__heading">
+                            Пройдіть перші 7 днів курсу та перевірте результат. Якщо стан не зміниться — напишіть нам, і
+                            ми
+                            повернемо Вам кошти.
+                        </h5>
+                        <a href="#" class="proposal__btn btn open-popup">Розпочати курс</a>
+                    </div>
+                </div>
+            </section>
+            <!----- AUTHOR SECTION ----->
+            <section class="author" id="author-bl">
+                <div class="author__container">
+                    <div class="author__photo">
+                        <img src="/images/author.jpg" alt="photo">
+                    </div>
+                    <div class="author__info">
+                        <span class="author__desc">Протягом цих 30 днів з Вами буде: </span>
+                        <h2 class="author__heading">Євгенія Сербінова</h2>
+                        <ul class="author__list">
+                            <li class="author__item">Професійна трансперсональна психологиня</li>
+                            <li class="author__item">20 років досвіду, сотні клієнтів</li>
+                            <li class="author__item ">Сертифікована фасилітаторка Grof Transpersonal Training</li>
+                            <li class="author__item ">Спеціалістка з вільного та холотропного дихання</li>
+                            <li class="author__item ">Професійна членкиня International Breathwork Foundation (IBF)</li>
+                            <li class="author__item ">Членкиня Європейської Трансперсональної Асоціації (EUROTAS)</li>
+                        </ul>
+                        <a href="#" class="author__btn btn">Детальніше про куратора</a>
+                    </div>
+                </div>
+            </section>
+            <!----- GETCOURSE SECTION ----->
+            <section class="getCourse" id="getCourse-bl">
+                <div class="getCourse__container">
+                    <h2 class="getCourse__heading">Придбати курс</h2>
+                    <div class="getCourse__content">
+                        <div class="getCourse__top">
+                            <h4 class="getCourse__title">Почніть 30-Денний Курс Зняття Стресу та Тривожності Сьогодні
+                            </h4>
+                            <span class="getCourse__subtitle">Тільки 7 хвилин на день</span>
+                        </div>
+                        <div class="getCourse__side">
+                            <p class="getCourse__price">690<span>грн</span></p>
+                            <a href="#" class="getCourse__btn btn open-popup">Придбати курс</a>
+
+                        </div>
+
+                        <div class="getCourse__bottom">
+                            <div class="getCourse__bottom-img">
+                                <img src="/images/icons.png" alt="icons">
+                            </div>
+                            <p class="getCourse__bottom-slogan">Приєднюйтесь до сотні щасливих людей, що побороли свої
+                                проблеми та страхи</p>
+                        </div>
+
+                        <p class="getCourse__side-text">Натисніть ĸнопĸу вище і виĸонуйте інструĸції щоб почати програму
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!----- PRACTICES SECTION ----->
+            <section class="practices" id="practices-bl">
+                <div class="practices__container">
+                    <h2 class="practices__heading">Спробуйте Дві Практики Безкоштовно</h2>
+                    <div class="practices__content">
+                        <div class="practices__item item-white">
+                            <div class="practices__video video-container">
+                                <video class="video-frame" id="videoFrame-2" controls controlsList="nodownload" src="/images/practice-1.mp4"
+                                    allowfullscreen="allowfullscreen" poster="images/poster-1.jpg">
+                                   
+                                </video>
+                                <button class="play-button" id="playButton-2"></button>
+                            </div>
+                            <div class="practices__info">
+                                <h3 class="practices__title">Вправа “Метелик”</h3>
+                                <p class="practices__text">
+                                    Ця вправа — відома тактильна версія техніки EMDR, що широко застосовується як для
+                                    зниження рівня стресу взагалі,
+                                    так і для зняття гострої стресової реакції. Наприклад, ізраїльський «Протокол
+                                    негайної стабілізації»
+                                    (ISP, Immediate Stabilization Procedure) для постраждалих від ракетних обстрілів,
+                                    базується виключно на цій техніці.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="practices__item item-green">
+                            <div class="practices__video video-container">
+                                <video class="video-frame" id="videoFrame-3" controls controlsList="nodownload" src="/images/practice-2.mp4"
+                                    allowfullscreen="allowfullscreen" poster="images/poster-2.jpg">
+                                   
+                                </video>
+                                <button class="play-button" id="playButton-3"></button>
+                            </div>
+                            <div class="practices__info">
+                                <h3 class="practices__title title-light">Вправа “Дерево”</h3>
+                                <p class="practices__text text-light">
+                                    Вчені з Американського Інституту Здоров’я (NIH) довели: мозок не відрізняє уявне від
+                                    реального, нервова система реагує
+                                    однаково. Тож, сміливо довіряйте своїм відчуттям під час практик за участю уяви.
+                                    Медитація «Дерево» — одна з тих практик, що
+                                    глибоко заземлює, заспокоює, повертає відчуття опори та зміцнює емоційну стійкість.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!----- FEEDBACK SECTION ----->
+            <section class="feedback" id="feedback-bl">
+                <div class="feedback__container">
+                    <h2 class="feedback__heading">Відгуки</h2>
+
+                    <div class="feedback__slider splide" id="feedbackSlider" aria-labelledby="carousel-heading">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="feedback__slide-item splide__slide">
+                                    <div class="feedback__slide-img">
+                                        <img src="/images/avatar-1.png" alt="avatar">
+                                    </div>
+                                    <h4 class="feedback__slide-name">Микита</h4>
+                                    <p class="feedback__slide-text">
+                                        Почав курс, бо не міг розслабитись навіть на вихідних.Займають мало часу,
+                                        поліпшився відпочинок і сон, медитації повертають увагу в теперішнє. Дякую за
+                                        курс.
+                                    </p>
+                                </div>
+                                <div class="feedback__slide-item splide__slide">
+                                    <div class="feedback__slide-img">
+                                        <img src="/images/avatar-2.png" alt="avatar">
+                                    </div>
+                                    <h4 class="feedback__slide-name">Лера</h4>
+                                    <p class="feedback__slide-text">
+                                        Взимку знайшла ці «З0 днів», вирішила спробувати. Ну що Вам сказати. Це
+                                        величезне
+                                        полегшення… Нарешті в мене є «рутина» на кожен день, що допомагає
+                                        відновлюватись.
+                                    </p>
+                                </div>
+                                <div class="feedback__slide-item splide__slide">
+                                    <div class="feedback__slide-img">
+                                        <img src="/images/avatar-3.png" alt="avatar">
+                                    </div>
+                                    <h4 class="feedback__slide-name">Лілія</h4>
+                                    <p class="feedback__slide-text">
+                                        Навіть просто МАТИ під рукою цей набір вправ — саме по собі знімає частину
+                                        стресу.
+                                        P. S. Особливо дякую за тапінг, роблю кожен день, сильно допомагає!
+                                    </p>
+                                </div>
+                                <div class="feedback__slide-item splide__slide">
+                                    <div class="feedback__slide-img">
+                                        <img src="/images/avatar-1.png" alt="avatar">
+                                    </div>
+                                    <h4 class="feedback__slide-name">Микита</h4>
+                                    <p class="feedback__slide-text">
+                                        Почав курс, бо не міг розслабитись навіть на вихідних.Займають мало часу,
+                                        поліпшився
+                                        відпочинок і сон, медитації повертають увагу в теперішнє. Дякую за курс.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!----- PROGRAM SECTION ----->
+            <section class="program" id="program-bl">
+                <div class="program__container">
+                    <h2 class="program__heading">Програма курсу</h2>
+                    <div class="program__content">
+                        <div class="accordion">
+                            <button class="accordion-header">
+                                <li>
+                                    <p>Тиждень 1</p>
+                                </li>
+                                <div class="accordion__arrow">
+                                    <img class="arrow" src="/images/right-arrow.svg" alt="arrow">
+                                </div>
+                            </button>
+                            <div class="accordion-body">
+                                <li>
+                                    • Дізнаєтесь, як впоратись з тривогою чи панікою
+                                </li>
+                                <li>
+                                    • Опануєте різноманітні техніки для заземлення
+                                </li>
+                                <li>
+                                    • Дасте собі раду за допомогою медитацій та тактильних технік
+                                </li>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion-header">
+                                <li>
+                                    <p>Тиждень 2</p>
+                                </li>
+                                <div class="accordion__arrow">
+                                    <img class="arrow" src="/images/right-arrow.svg" alt="arrow">
+                                </div>
+                            </button>
+                            <div class="accordion-body">
+                                <li>
+                                    • Дізнаєтесь, як впоратись з тривогою чи панікою
+                                </li>
+                                <li>
+                                    • Опануєте різноманітні техніки для заземлення
+                                </li>
+                                <li>
+                                    • Дасте собі раду за допомогою медитацій та тактильних технік
+                                </li>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion-header">
+                                <li>
+                                    <p>Тиждень 3</p>
+                                </li>
+                                <div class="accordion__arrow">
+                                    <img class="arrow" src="/images/right-arrow.svg" alt="arrow">
+                                </div>
+                            </button>
+                            <div class="accordion-body">
+                                <li>
+                                    • Дізнаєтесь, як впоратись з тривогою чи панікою
+                                </li>
+                                <li>
+                                    • Опануєте різноманітні техніки для заземлення
+                                </li>
+                                <li>
+                                    • Дасте собі раду за допомогою медитацій та тактильних технік
+                                </li>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion-header">
+                                <li>
+                                    <p>Тиждень 4</p>
+                                </li>
+                                <div class="accordion__arrow">
+                                    <img class="arrow" src="/images/right-arrow.svg" alt="arrow">
+                                </div>
+                            </button>
+                            <div class="accordion-body">
+                                <li>
+                                    • Дізнаєтесь, як впоратись з тривогою чи панікою
+                                </li>
+                                <li>
+                                    • Опануєте різноманітні техніки для заземлення
+                                </li>
+                                <li>
+                                    • Дасте собі раду за допомогою медитацій та тактильних технік
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!----- INFO SECTION ----->
+            <section class="info" id="info-bl">
+                <div class="info__container">
+                    <div class="info__blue-bl">
+                        <div class="info__wrapp info-block">
+                            <div class="info__item info-item">
+                                <div class="info__num info-item__num">
+                                    <span>1</span>
+                                </div>
+                                <h4 class="info__title info-item__title">Як розпочати курс?</h4>
+                                <p class="info__text info-item__text">
+                                    Після покупки Ви отримаєте листа з детальною інструкцією та доступом до відео.
+                                </p>
+                            </div>
+                            <div class="info__item info-item">
+                                <div class="info__num info-item__num">
+                                    <span>2</span>
+                                </div>
+                                <h4 class="info__title info-item__title">Емоційна підтримка</h4>
+                                <p class="info__text info-item__text">
+                                    Всі 30 днів Ви будете отримувати листи з порадами щодо виконання кожної з практик.
+                                </p>
+                            </div>
+                            <div class="info__item info-item">
+                                <div class="info__num info-item__num">
+                                    <span>3</span>
+                                </div>
+                                <h4 class="info__title info-item__title">Довічний доступ до програми</h4>
+                                <p class="info__text info-item__text">Покупка одноразова: всі відео залишаються в
+                                    безлімітному доступі 24/7.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__gradient-bl">
+                        <h5 class="info__heading">7-Денне Повернення Коштів</h5>
+                        <p class="info__subtitle">
+                            Швидĸо та легĸо. Просто надішліть нам листа і дайте знати, що Ви хочете сĸасувати програму.
+                            Ми повернемо Вам ĸошти негайно.
+                        </p>
+                        <a href="#" class="info__btn btn open-popup">Розпочати курс</a>
+                    </div>
+                </div>
+            </section>
+            <!----- POPUP ----->
+            <div class="popup__bl">
+                <div class="popup__bg">
+                    <form class="popup">
+                        <div class="popup__form">
+                            <h3 class="popup__heading">Реєстрація на курс</h3>
+                            <img src="images/close.svg" class="close-popup" alt="close">
+                            <label>
+                                <input type="text" name="name" placeholder="Ваше ім`я">
+                                <div class="label__text">
+                                    Ім`я
+                                </div>
+                            </label>
+                            <label>
+                                <input type="text" name="email" placeholder="name@mail.com">
+                                <div class="label__text">
+                                    Email
+                                </div>
+                            </label>
+                            <button type="submit" class="btn">Придбати курс</button>
+                        </div>
+                        <div class="popup__info">
+                            <div class="popup__img">
+                                <img src="/images/popup-img.png" alt="image">
+                            </div>
+                            <h4 class="popup__title">Почніть 30-денний Курс Зняття Стресу та Тривожності Сьогодні</h4>
+                            <p class="popup__price">690<span>грн</span></p>
+                            <span class="popup__subtitle">Натисніть ĸнопĸу вище і виĸонуйте інструĸції щоб оплатити курс та почати
+                                програму</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!----- FOOTER SECTION ----->
+        <footer class="footer" id="footer">
+            <div class="footer__container">
+                <div class="footer__top">
+                    <img src="/images/footer__logo.svg" alt="logo" class="footer__logo">
+                    <a href="#" class="footer__btn btn open-popup">Придбати курс</a>
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__mail link">
+                        <p class="footer__mail-subject">Є питання? Напишіть нам:</p>
+                        <a href="mailto:supp.online.practice@gmail.com"
+                            class="footer__mail-adress">supp.online.practice@gmail.com
+                        </a>
+                    </div>
+                    <div class="footer__nav-menu">
+                        <p class="footer__nav-subject">Навігація</p>
+                        <div class="footer__nav">
+                            <li class="footer__nav-item link"><a href="#course-bl">Про курс</a></li>
+                            <li class="footer__nav-item link"><a href="#practices-bl">Спробувати техніки</a></li>
+                            <li class="footer__nav-item link"><a href="#points-bl">Для кого</a></li>
+                            <li class="footer__nav-item link"><a href="#feedback-bl">Відгуки</a></li>
+                        </div>
+                    </div>
+                    <a href="#" class="footer__btn-mob btn open-popup">Придбати курс</a>
+                    <div class="footer__socialMedia">
+                        <a class="footer__link link" href="#">
+                            <img class="footer__icon" src="images/fb.svg" alt="facebook">
+                        </a>
+                        <a class="footer__link link" href="#">
+                            <img class="footer__icon" src="images/youtube.svg" alt="youtube">
+                        </a>
+                        <a class="footer__link link" href="#">
+                            <img class="footer__icon" src="images/instagram.svg" alt="instagram">
+                        </a>
+                    </div>
+                    <span class="footer__text">© Розробник курсу «Центр психології самоусвідомлення»</span>
+                </div>
+                <span class="footer__rights">2024 Центр психології самоусвідомлення. Всі права застережено. </span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/splide.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

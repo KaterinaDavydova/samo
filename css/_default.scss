@@ -136,7 +136,7 @@ body {
     font-family: "Gilroy Medium";
     src: url(../fonts/gilroy/gilroy-medium.ttf);
     src: url(../fonts/gilroy/gilroy-medium.woff);
-    font-weight: medium;
+    font-weight: 500;
 }
 
 @font-face {
@@ -162,6 +162,7 @@ h1 {
 h2 {
     color: rgb(32, 49, 112);
     font-family: "Gilroy Medium";
+    font-weight: 500;
     line-height: 100%;
     font-size: clamp(44px, 5.56vw, 80px);
 }
@@ -184,6 +185,7 @@ h4 {
 h5 {
     color: rgb(255, 255, 255);
     font-family: "Gilroy Medium";
+    font-weight: 500;
     line-height: 107%;
     font-size: clamp(30px, 4.17vw, 60px);
 }

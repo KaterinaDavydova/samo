@@ -65,12 +65,11 @@
 
         padding: 9px 26px;
         box-sizing: border-box;
-        border: 1px solid rgb(32, 49, 112);
+        border: 1px solid rgb(32, 49, 112, 0.3);
         border-radius: 70px;
-        opacity: 0.3;
-
         color: rgb(32, 49, 112);
-        font-family: "Gilroy";
+        font-family: "Gilroy Semibold";
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
     }
@@ -180,9 +179,10 @@
     }
 
     .primary__info {
-        display: flex;
+        display: grid;
         gap: 17px;
         margin-top: -40px;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .primary__info_item {
@@ -265,11 +265,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: rgba(0, 0, 0, 0.5);
+            background: none;
             border: none;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -277,9 +274,13 @@
         }
 
         .play-button::before {
-            content: '\25BA';
-            font-size: 30px;
+            content: "";
             color: white;
+            width: 85px;
+            height: 85px;
+            background-image: url("../images/play-btn.svg");
+            background-repeat: no-repeat;
+            display: inline-block;
         }
 
         & video.playing+.play-button {
@@ -288,15 +289,15 @@
     }
 
     .course__info {
-
         border-radius: 50px;
-        background: radial-gradient(33.00% 50.00% at 50% 50%, rgba(38, 255, 255, 0.03), rgba(32, 49, 112, 0.15) 100%), rgb(32, 49, 112);
+        background:
+            linear-gradient(135deg, rgba(38, 255, 255, 0.03) 25%, rgba(32, 49, 112, 0.15) 100%),
+            rgb(32, 49, 112);
     }
 
     .course__info_block {
-
+        margin-top: -90px;
         padding: 148px 95px 56px;
-        margin-top: -80px;
 
         .info-item__title {
 
@@ -350,8 +351,6 @@
 
         margin-bottom: 20px;
     }
-
-    .info-item__text {}
 }
 
 
@@ -378,7 +377,10 @@
     .profit__info_block {
 
         .profit__info_item {
+            position: relative;
+
             .profit__info_num {
+                position: relative;
                 box-sizing: border-box;
                 border: 1px solid rgba(32, 49, 112, 0.2);
                 border-radius: 40px;
@@ -387,7 +389,6 @@
                     box-sizing: border-box;
                     border: 1px solid rgba(32, 49, 112, 0.05);
                     border-radius: 40px;
-
                     background: rgb(32, 49, 112);
                 }
             }
@@ -410,8 +411,9 @@
     }
 
     .points__cards_wrapp {
-        display: flex;
+        display: grid;
         gap: 20px;
+        grid-template-columns: 1fr 1fr;
     }
 
     .points-card {
@@ -457,14 +459,34 @@
             }
 
             .points__note-desc {
+                font-size: 17px;
+                color: rgba(255, 255, 255, 1);
                 margin-left: 32%;
             }
         }
     }
 
     .points__blue_card {
-
+        position: relative;
         background: rgb(33, 49, 112);
+
+        .points__img-one {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(-140%, 130%);
+        }
+
+        .points__img-two {
+            width: 84px;
+            height: 84px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(25%, 100%);
+        }
 
         .points__blue_title {
             color: rgb(255, 255, 255);
@@ -473,6 +495,7 @@
         .points__blue_subtitle {
             color: rgba(255, 255, 255, 1);
             opacity: 0.8;
+            font-size: 17px
         }
 
         .points__btn {
@@ -494,7 +517,7 @@
         }
 
         .red-elem {
-            color: rgb(102, 112, 133);
+            color: rgba(32, 49, 112, 1);
             font-family: "Gilroy Semibold";
             font-size: 17px;
             line-height: 20px;
@@ -552,6 +575,7 @@
     .proposal__btn {
 
         @extend %whiteBtn;
+        color: rgba(40, 149, 137, 1);
         border: 1.5px solid rgb(255, 255, 255);
         margin: 0 auto;
     }
@@ -570,6 +594,7 @@
     .author__photo {
         aspect-ratio: 1 / 1;
         max-width: 500px;
+        object-fit: cover;
 
         img {
             height: 100%;
@@ -639,14 +664,12 @@
 
     margin-top: 120px;
 
-    .getCourse__container {}
-
     .getCourse__heading {
         margin-bottom: 40px;
     }
 
     .getCourse__content {
-
+        position: relative;
         border-radius: 20px;
         background: rgb(33, 49, 112);
         padding: 40px;
@@ -655,8 +678,6 @@
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto auto;
         gap: 58px;
-
-
     }
 
     .getCourse__top {
@@ -668,7 +689,6 @@
             font-size: 38px;
             line-height: 120%;
             font-size: clamp(29px, 4vw, 38px);
-
         }
 
         .getCourse__subtitle {
@@ -683,7 +703,6 @@
         }
     }
 
-
     .getCourse__bottom {
         grid-column: 1 / span 2;
         grid-row: 2;
@@ -695,7 +714,7 @@
         .getCourse__bottom-img {
             max-width: 120px;
             height: 53px;
-            aspect-ratio: 2 / 1;
+            aspect-ratio: 2.26 / 1;
 
             img {
                 width: 100%;
@@ -731,7 +750,20 @@
                 font-size: 28px;
                 line-height: 34px;
             }
+        }
 
+        .getCourse__img-one {
+            position: absolute;
+            top: 0;
+            right: 0%;
+            transform: translate(-250%, -50%);
+        }
+
+        .getCourse__img-two {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(-50%, 5%);
         }
 
         .getCourse__btn {
@@ -800,11 +832,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: rgba(0, 0, 0, 0.5);
+            background: none;
             border: none;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -812,9 +841,13 @@
         }
 
         .play-button::before {
-            content: '\25BA';
-            font-size: 30px;
+            content: "";
             color: white;
+            width: 85px;
+            height: 85px;
+            background-image: url("../images/play-btn.svg");
+            background-repeat: no-repeat;
+            display: inline-block;
         }
 
         & video.playing+.play-button {
@@ -859,6 +892,7 @@
             display: flex;
 
             .splide__slide {
+
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
@@ -870,12 +904,25 @@
                 background: rgb(255, 255, 255);
                 padding: 25px;
                 text-align: center;
+
+                .feedback__slide-img {
+                    margin: 0 auto;
+                    max-width: 140px;
+                    object-fit: cover;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
             }
 
             .is-active {
                 opacity: 1;
             }
         }
+
+
 
         .splide__arrow--prev {
             background-image: url("../images/right-arrow.svg");
@@ -1211,6 +1258,10 @@
             }
         }
 
+        .popup__img-mob {
+            display: none;
+        }
+
         .popup__title {
             font-size: 25px;
             margin-bottom: 30px;
@@ -1409,6 +1460,21 @@
 
 @media (max-width: 1024px) {
 
+    .points {
+        .points__white_card {
+            .points__note {
+                .points__note-pic {
+                    max-width: 138px;
+                    height: 179px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    transform: translate(-10%, 20%);
+                }
+            }
+        }
+    }
+
     .getCourse {
 
         .getCourse__bottom {
@@ -1549,7 +1615,7 @@
 
                     .header__menu-link {
                         color: rgb(32, 49, 112);
-                        font-family: "Gilroy";
+                        font-family: "Gilroy Medium";
                         font-size: 34px;
                         font-weight: 500;
                         line-height: 46px;
@@ -1584,7 +1650,7 @@
 
     .points {
         .points__cards_wrapp {
-            flex-direction: column;
+            grid-template-columns: 1fr;
         }
     }
 
@@ -1630,7 +1696,7 @@
         }
 
         .primary__info {
-            flex-direction: column;
+            grid-template-columns: 1fr;
             margin-top: -15px;
             gap: 20px;
         }
@@ -1679,6 +1745,10 @@
 
     .points {
         margin-top: 80px;
+
+        .points-card {
+            padding: 40px 30px 30px;
+        }
 
         .points__blue_card {
 
@@ -1768,6 +1838,22 @@
                 grid-row: 2;
                 width: 100%;
 
+                .getCourse__img-one {
+                    top: 35%;
+                    right: 53%;
+                    transform: translate(50%, 50%);
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .getCourse__img-two {
+                    top: 35%;
+                    right: 50%;
+                    transform: translate(100%, 50%);
+                    width: 84px;
+                    height: 84px;
+                }
+
                 .getCourse__price {
                     margin-right: 0;
                 }
@@ -1800,8 +1886,14 @@
     .feedback {
 
         .splide {
-            .splide__slide {
-                width: calc(100% / 2)
+            .splide__list {
+                .splide__slide {
+                    width: calc(100% / 2);
+
+                    .feedback__slide-img {
+                        max-width: 150px;
+                    }
+                }
             }
 
             .splide__arrow--next {
@@ -1822,6 +1914,27 @@
 
     .program {
         margin-top: 170px;
+
+        .program__content {
+            padding: 30px;
+        }
+
+        .accordion {
+
+            padding: 30px 0;
+
+            &:first-child {
+
+                padding: 0;
+                padding-bottom: 30px;
+            }
+
+            &:last-child {
+
+                padding: 0;
+                padding-top: 30px;
+            }
+        }
     }
 
     .info {
@@ -1830,6 +1943,14 @@
         .info__wrapp {
             gap: 50px;
             flex-direction: column;
+        }
+
+        .info__blue-bl {
+            border-radius: 40px;
+        }
+
+        .info__gradient-bl {
+            border-radius: 40px;
         }
 
         .info__num {
@@ -1899,14 +2020,29 @@
             border-radius: 0px 0px 30px 30px;
 
             .popup__img {
-                max-width: 308px;
-                aspect-ratio: 2.37 / 1;
+                display: none;
+            }
+
+            .popup__img-mob {
+                display: flex;
                 margin-bottom: 20px;
+                aspect-ratio: 2.37 / 1;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
 
             .popup__title {
                 margin-bottom: 20px;
             }
+        }
+    }
+
+    .footer {
+        .footer__text {
+            text-align: center;
         }
     }
 
@@ -1993,6 +2129,17 @@
                 }
             }
         }
+
+        .points__blue_card {
+
+            .points__img-one {
+                transform: translate(-140%, -25%);
+            }
+
+            .points__img-two {
+                transform: translate(15%, 30%);
+            }
+        }
     }
 
     .author {
@@ -2007,6 +2154,25 @@
         }
 
         .getCourse__content {
+
+            .getCourse__side {
+                .getCourse__img-one {
+                    top: 35%;
+                    right: 40%;
+                    transform: translate(100%, 50%);
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .getCourse__img-two {
+                    top: 35%;
+                    right: 30%;
+                    transform: translate(100%, 50%);
+                    width: 84px;
+                    height: 84px;
+                }
+            }
+
             .getCourse__bottom {
                 .getCourse__bottom-slogan {
                     font-size: 15px;
@@ -2090,6 +2256,12 @@
 
         .footer__rights {
             padding: 20px 0;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .footer__text {
+            font-size: 13px;
         }
     }
 }
@@ -2121,14 +2293,6 @@
     .footer {
         .footer__container {
             padding: 50px 20px;
-        }
-
-        .footer__text {
-            font-size: 10px;
-        }
-
-        .footer__rights {
-            font-size: 9px;
         }
     }
 }

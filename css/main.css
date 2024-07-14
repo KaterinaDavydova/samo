@@ -337,7 +337,7 @@ li a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-115%, 10%);
+  transform: translate(-115%, 0%);
   visibility: hidden;
   border-radius: 11px;
   padding: 10px 10px;
@@ -578,6 +578,15 @@ li a {
   border-radius: 40px;
   background: rgb(32, 49, 112);
 }
+.profit .profit__info_block .profit__info_item .profit__info_num .item-line {
+  content: "";
+  display: block;
+  width: 354px;
+  border-bottom: 1px dashed rgb(210, 214, 226);
+  position: absolute;
+  top: 50%;
+  left: 110%;
+}
 .profit .profit__info_block .profit__info_item .profit__info_title {
   color: rgb(32, 49, 112);
 }
@@ -689,6 +698,7 @@ li a {
   background-image: url("../images/cercle.svg");
   background-repeat: no-repeat;
   display: inline-block;
+  padding: 12px;
 }
 .points .points__list .green-elem {
   color: rgb(255, 255, 255);
@@ -704,6 +714,7 @@ li a {
   background-image: url("../images/green-cercle.svg");
   background-repeat: no-repeat;
   display: inline-block;
+  padding: 12px;
 }
 
 .proposal {
@@ -780,6 +791,7 @@ li a {
   background-image: url("../images/green-cercle.svg");
   background-repeat: no-repeat;
   display: inline-block;
+  padding: 12px;
 }
 .author .author__btn {
   max-width: 272px;
@@ -1442,6 +1454,19 @@ li a {
     max-width: 179px;
     width: 100%;
   }
+  .header .header__menu-content {
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: calc(100vh - 100px);
+    justify-content: start;
+    gap: 10px;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 30px;
+  }
   .header .header__menu-mobile {
     position: fixed;
     top: 0;
@@ -1467,8 +1492,8 @@ li a {
     position: absolute;
     z-index: 5;
     top: 0%;
-    left: 0;
-    transform: translate(55px, 55px);
+    left: 0%;
+    transform: translate(15%, 50%);
     max-width: 179px;
     height: auto;
   }
@@ -1485,28 +1510,21 @@ li a {
     font-size: 17px;
     line-height: 30px;
     position: absolute;
-    bottom: 30%;
+    bottom: 5%;
     left: 50%;
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, 0%);
     z-index: 5;
   }
   .header .header__menu-mobile .header__menu-list {
     display: none;
-    position: relative;
-    background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     text-align: left;
-    height: 499px;
     justify-content: start;
     gap: 10px;
-    padding: 30px;
-    margin: 30px;
-    border-radius: 30px;
   }
   .header .header__menu-mobile .header__menu-list .header__menu-item:first-child {
-    margin-top: 53px;
-    padding-top: 30px;
+    margin-top: 60px;
   }
   .header .header__menu-mobile .header__menu-list .header__menu-item .header__menu-link {
     color: rgb(32, 49, 112);

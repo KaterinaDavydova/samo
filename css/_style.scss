@@ -82,10 +82,9 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-115%, 10%);
+        transform: translate(-115%, 0%);
         visibility: hidden;
         border-radius: 11px;
-
         padding: 10px 10px;
         display: none;
     }
@@ -311,6 +310,8 @@
     }
 }
 
+// ----- INFO-BLOCK SEECTION -----
+
 .info-block {
     display: flex;
     gap: 90px;
@@ -348,11 +349,9 @@
     }
 
     .info-item__title {
-
         margin-bottom: 20px;
     }
 }
-
 
 // ----- PROFIT SEECTION -----
 
@@ -390,9 +389,19 @@
                     border: 1px solid rgba(32, 49, 112, 0.05);
                     border-radius: 40px;
                     background: rgb(32, 49, 112);
+                } 
+                
+                .item-line{
+                    content: "";
+                    display: block;
+                    width: 354px;
+                    border-bottom: 1px dashed rgb(210, 214, 226);
+                    position: absolute;
+                    top: 50%;
+                    left: 110%;
                 }
             }
-
+            
             .profit__info_title {
                 color: rgb(32, 49, 112);
             }
@@ -531,6 +540,7 @@
             background-image: url("../images/cercle.svg");
             background-repeat: no-repeat;
             display: inline-block;
+            padding: 12px;
         }
 
         .green-elem {
@@ -548,6 +558,7 @@
             background-image: url("../images/green-cercle.svg");
             background-repeat: no-repeat;
             display: inline-block;
+            padding: 12px;
         }
     }
 
@@ -602,8 +613,6 @@
         }
     }
 
-    .author__info {}
-
     .author__desc {
         color: rgb(32, 49, 112);
         font-family: "Gilroy Semibold";
@@ -618,9 +627,7 @@
         font-family: "Gilroy Semibold";
         line-height: 61px;
         font-size: clamp(31px, 4vw, 60px);
-
         margin-top: 10px;
-
     }
 
     .author__list {
@@ -637,7 +644,6 @@
             font-size: 17px;
             font-weight: 500;
             line-height: 20px;
-
             display: flex;
             align-items: center;
             gap: 12px;
@@ -651,6 +657,7 @@
             background-image: url("../images/green-cercle.svg");
             background-repeat: no-repeat;
             display: inline-block;
+            padding: 12px;
         }
     }
 
@@ -1542,6 +1549,20 @@
             width: 100%;
         }
 
+        .header__menu-content{
+            position: relative;
+            background: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            height: calc(100vh - 100px);
+            justify-content: start;
+            gap: 10px;
+            padding: 30px;
+            margin: 30px;
+            border-radius: 30px;
+        }
+
         .header__menu-mobile {
             position: fixed;
             top: 0;
@@ -1568,8 +1589,8 @@
                 position: absolute;
                 z-index: 5;
                 top: 0%;
-                left: 0;
-                transform: translate(55px, 55px);
+                left: 0%;
+                transform: translate(15%, 50%);
                 max-width: 179px;
                 height: auto;
             }
@@ -1587,30 +1608,23 @@
                 font-size: 17px;
                 line-height: 30px;
                 position: absolute;
-                bottom: 30%;
+                bottom: 5%;
                 left: 50%;
-                transform: translate(-50%, 20%);
+                transform: translate(-50%, 0%);
                 z-index: 5;
             }
 
             .header__menu-list {
                 display: none;
-                position: relative;
-                background: rgb(255, 255, 255);
                 display: flex;
                 flex-direction: column;
                 text-align: left;
-                height: 499px;
                 justify-content: start;
                 gap: 10px;
-                padding: 30px;
-                margin: 30px;
-                border-radius: 30px;
 
                 .header__menu-item {
                     &:first-child {
-                        margin-top: 53px;
-                        padding-top: 30px;
+                        margin-top: 60px;
                     }
 
                     .header__menu-link {

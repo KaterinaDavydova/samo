@@ -1309,7 +1309,7 @@ li a {
   line-height: 16px;
 }
 .popup__bl .popup.active {
-  transform: translate(-50%, -55%) scale(0.7);
+  transform: translate(-50%, -55%) scale(0.8);
   transition: 0.5s all;
 }
 .popup__bl .close-popup {

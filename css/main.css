@@ -1261,7 +1261,6 @@ li a {
   height: auto;
   transition: 0.5s all;
   display: flex;
-  max-height: 90vh;
 }
 .popup__bl .popup__form {
   width: 100%;
@@ -1310,7 +1309,7 @@ li a {
   line-height: 16px;
 }
 .popup__bl .popup.active {
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -55%) scale(0.7);
   transition: 0.5s all;
 }
 .popup__bl .close-popup {
@@ -1812,7 +1811,6 @@ li a {
     flex-direction: column;
     max-width: 368px;
     height: 100%;
-    overflow-y: auto;
   }
   .popup__bl .popup label {
     margin-bottom: 15px;

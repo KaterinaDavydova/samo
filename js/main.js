@@ -18,6 +18,12 @@ function toggleMenu() {
     menu.classList.toggle('active');
     document.body.classList.toggle('lock');
 }
+function closeMenu() {
+    menuBtn.classList.remove('active');
+    menu.classList.remove('active');
+    document.body.classList.remove('lock');
+}
+
 window.addEventListener('scroll', () => {
     document.body.classList.remove('lock');
 });
@@ -121,6 +127,7 @@ let closePopupButton = document.querySelector('.close-popup');
 openPopupButtons.forEach((button) => {
     button.addEventListener('click', (e) => {
         e.preventDefault();
+        closeMenu();
         popupBg.classList.add('active');
         popup.classList.add('active');
         document.body.classList.add('lock');

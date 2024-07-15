@@ -389,9 +389,9 @@
                     border: 1px solid rgba(32, 49, 112, 0.05);
                     border-radius: 40px;
                     background: rgb(32, 49, 112);
-                } 
-                
-                .item-line{
+                }
+
+                .item-line {
                     content: "";
                     display: block;
                     width: 354px;
@@ -401,7 +401,7 @@
                     left: 110%;
                 }
             }
-            
+
             .profit__info_title {
                 color: rgb(32, 49, 112);
             }
@@ -927,34 +927,38 @@
             .is-active {
                 opacity: 1;
             }
+            
         }
 
-
-
         .splide__arrow--prev {
-            background-image: url("../images/right-arrow.svg");
             rotate: 180deg;
             right: 0%;
             transform: translate(160%, 200%);
             top: 0%;
-
             background: no-repeat;
             border: 1px solid rgba(57, 78, 208, 0.2);
             border-radius: 14px;
             filter: brightness(0) saturate(100%) invert(47%) sepia(86%) saturate(6945%) hue-rotate(229deg) brightness(86%) contrast(88%);
+
+            svg{
+                width: 18px;
+                height: 18px;
+            }
         }
 
         .splide__arrow--next {
-            background-image: url("../images/right-arrow.svg");
             top: 0%;
             right: 0%;
             transform: translate(0%, -200%);
-
             background: no-repeat;
             border: 1px solid rgba(57, 78, 208, 0.2);
             border-radius: 14px;
             filter: brightness(0) saturate(100%) invert(47%) sepia(86%) saturate(6945%) hue-rotate(229deg) brightness(86%) contrast(88%);
 
+            svg{
+                width: 18px;
+                height: 18px;
+            }
         }
     }
 }
@@ -1397,6 +1401,14 @@
 
         .info-block {
             gap: 50px;
+
+            .profit__info_item {
+                .profit__info_num {
+                    .item-line {
+                        width: 325px;
+                    }
+                }
+            }
         }
     }
 
@@ -1482,6 +1494,18 @@
         }
     }
 
+    .profit {
+        .profit__info_block {
+            .profit__info_item {
+                .profit__info_num {
+                    .item-line {
+                        width: 265px;
+                    }
+                }
+            }
+        }
+    }
+
     .getCourse {
 
         .getCourse__bottom {
@@ -1549,7 +1573,7 @@
             width: 100%;
         }
 
-        .header__menu-content{
+        .header__menu-content {
             position: relative;
             background: rgb(255, 255, 255);
             display: flex;
@@ -1601,7 +1625,7 @@
                 background: linear-gradient(140.31deg, rgb(217, 178, 39) 7.148%, rgb(253, 65, 65) 91.752%);
                 text-align: center;
                 max-width: 308px;
-                width: 100%;
+                width: calc(100% - 40px);
                 height: 70px;
                 color: rgb(255, 255, 255);
                 font-family: "Gilroy Semibold";
@@ -1658,8 +1682,18 @@
         }
     }
 
-    .profit__info_block {
-        gap: 50px;
+    .profit {
+        .profit__info_block {
+            gap: 50px;
+
+            .profit__info_item {
+                .profit__info_num {
+                    .item-line {
+                        width: 225px;
+                    }
+                }
+            }
+        }
     }
 
     .points {
@@ -1743,6 +1777,14 @@
 
         .profit__info_block {
             flex-direction: column;
+
+            .profit__info_item {
+                .profit__info_num {
+                    .item-line {
+                        border-bottom: none;
+                    }
+                }
+            }
         }
 
         .profit__blueBtn {

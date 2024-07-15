@@ -91,6 +91,7 @@ const splide = new Splide( '.splide', {
     perMove: 1,
     gap: '17px',
     fixedWidth: "382px",
+    lazyLoad: false,
     breakpoints: {
         1200: { perPage: 2 },
         768 : { perPage: 2, fixedWidth: "335px"},

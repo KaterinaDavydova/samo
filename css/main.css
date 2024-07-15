@@ -1011,7 +1011,6 @@ li a {
   opacity: 1;
 }
 .feedback .splide .splide__arrow--prev {
-  background-image: url("../images/right-arrow.svg");
   rotate: 180deg;
   right: 0%;
   transform: translate(160%, 200%);
@@ -1021,8 +1020,11 @@ li a {
   border-radius: 14px;
   filter: brightness(0) saturate(100%) invert(47%) sepia(86%) saturate(6945%) hue-rotate(229deg) brightness(86%) contrast(88%);
 }
+.feedback .splide .splide__arrow--prev svg {
+  width: 18px;
+  height: 18px;
+}
 .feedback .splide .splide__arrow--next {
-  background-image: url("../images/right-arrow.svg");
   top: 0%;
   right: 0%;
   transform: translate(0%, -200%);
@@ -1030,6 +1032,10 @@ li a {
   border: 1px solid rgba(57, 78, 208, 0.2);
   border-radius: 14px;
   filter: brightness(0) saturate(100%) invert(47%) sepia(86%) saturate(6945%) hue-rotate(229deg) brightness(86%) contrast(88%);
+}
+.feedback .splide .splide__arrow--next svg {
+  width: 18px;
+  height: 18px;
 }
 
 .program {
@@ -1373,6 +1379,9 @@ li a {
   .profit .info-block {
     gap: 50px;
   }
+  .profit .info-block .profit__info_item .profit__info_num .item-line {
+    width: 325px;
+  }
   .points .points__container {
     padding: 0 40px;
   }
@@ -1413,6 +1422,9 @@ li a {
     bottom: 0;
     left: 0;
     transform: translate(-10%, 20%);
+  }
+  .profit .profit__info_block .profit__info_item .profit__info_num .item-line {
+    width: 265px;
   }
   .getCourse .getCourse__bottom .getCourse__bottom-slogan {
     width: 55%;
@@ -1503,7 +1515,7 @@ li a {
     background: linear-gradient(140.31deg, rgb(217, 178, 39) 7.148%, rgb(253, 65, 65) 91.752%);
     text-align: center;
     max-width: 308px;
-    width: 100%;
+    width: calc(100% - 40px);
     height: 70px;
     color: rgb(255, 255, 255);
     font-family: "Gilroy Semibold";
@@ -1548,8 +1560,11 @@ li a {
   .header .header__btn {
     display: none;
   }
-  .profit__info_block {
+  .profit .profit__info_block {
     gap: 50px;
+  }
+  .profit .profit__info_block .profit__info_item .profit__info_num .item-line {
+    width: 225px;
   }
   .points .points__cards_wrapp {
     grid-template-columns: 1fr;
@@ -1610,6 +1625,9 @@ li a {
   }
   .profit .profit__info_block {
     flex-direction: column;
+  }
+  .profit .profit__info_block .profit__info_item .profit__info_num .item-line {
+    border-bottom: none;
   }
   .profit .profit__blueBtn {
     display: none;

@@ -342,9 +342,12 @@ li a {
   border-radius: 11px;
   padding: 10px 10px;
   display: none;
+  opacity: 0;
+  transition: opacity 3s ease;
 }
 .header .header__burgerIcon.active .menuIcon {
   visibility: visible;
+  opacity: 1;
 }
 
 .primary .primary__headline {

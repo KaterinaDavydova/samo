@@ -87,10 +87,13 @@
         border-radius: 11px;
         padding: 10px 10px;
         display: none;
+        opacity: 0;
+    transition: opacity 3s ease;
     }
 
     .header__burgerIcon.active .menuIcon {
         visibility: visible;
+        opacity: 1;
     }
 
     // -----end mobile menu-----

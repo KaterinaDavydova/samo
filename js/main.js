@@ -97,7 +97,6 @@ const splide = new Splide( '.splide', {
     perMove: 1,
     gap: '17px',
     fixedWidth: "382px",
-    lazyLoad: false,
     breakpoints: {
         1200: { perPage: 2 },
         768 : { perPage: 2, fixedWidth: "335px"},
@@ -132,7 +131,6 @@ openPopupButtons.forEach((button) => {
         popup.classList.add('active');
         document.body.classList.add('lock');
     })
-    
 });
 
 closePopupButton.addEventListener('click',() => {
@@ -140,7 +138,6 @@ closePopupButton.addEventListener('click',() => {
     popup.classList.remove('active');
     document.body.classList.remove('lock');
 });
-
 
 document.addEventListener('click', (e) => {
     if(e.target === popupBg) {

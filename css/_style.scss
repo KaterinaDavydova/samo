@@ -890,13 +890,19 @@
     .splide {
         position: relative;
 
+        .splide__pagination {
+            display: none !important;
+        }
+
         .splide__track {
             overflow: hidden;
+            height: 400px;
         }
 
         .splide__list {
 
             display: flex;
+            height: 100%;
 
             .splide__slide {
 
@@ -1860,6 +1866,8 @@
     }
 
     .getCourse {
+        margin-top: 80px;
+
         .getCourse__content {
             grid-template-columns: 1fr;
             grid-template-rows: auto auto auto;
@@ -1939,6 +1947,7 @@
     }
 
     .feedback {
+        margin-top: 80px;
 
         .splide {
             .splide__list {
@@ -1968,7 +1977,7 @@
     }
 
     .program {
-        margin-top: 170px;
+        margin-top: 150px;
 
         .program__content {
             padding: 30px;

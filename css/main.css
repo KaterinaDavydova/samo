@@ -978,11 +978,16 @@ li a {
 .feedback .splide {
   position: relative;
 }
+.feedback .splide .splide__pagination {
+  display: none !important;
+}
 .feedback .splide .splide__track {
   overflow: hidden;
+  height: 400px;
 }
 .feedback .splide .splide__list {
   display: flex;
+  height: 100%;
 }
 .feedback .splide .splide__list .splide__slide {
   display: flex;
@@ -1680,6 +1685,9 @@ li a {
   .author .author__btn {
     max-width: 388px;
   }
+  .getCourse {
+    margin-top: 80px;
+  }
   .getCourse .getCourse__content {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
@@ -1740,6 +1748,9 @@ li a {
   .practices .practices__text {
     margin-top: 20px;
   }
+  .feedback {
+    margin-top: 80px;
+  }
   .feedback .splide .splide__list .splide__slide {
     width: 50%;
   }
@@ -1759,7 +1770,7 @@ li a {
     transform: translate(20%, 0%);
   }
   .program {
-    margin-top: 170px;
+    margin-top: 150px;
   }
   .program .program__content {
     padding: 30px;

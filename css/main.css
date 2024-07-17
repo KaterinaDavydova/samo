@@ -476,7 +476,7 @@ li a {
 .course .course__video video {
   width: 100%;
   height: 100%;
-  border-radius: 50px;
+  border-radius: 50px 50px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
   overflow-clip-margin: content-box;
@@ -874,7 +874,7 @@ li a {
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 98.97%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-right: 15vw;
+  margin-right: 12vw;
 }
 .getCourse .getCourse__side .getCourse__price span {
   font-family: "Gilroy Medium";
@@ -1739,15 +1739,15 @@ li a {
     width: 100%;
   }
   .getCourse .getCourse__content .getCourse__side .getCourse__img-one {
-    top: 35%;
-    right: 53%;
+    top: 32%;
+    right: 50%;
     transform: translate(50%, 50%);
     width: 40px;
     height: 40px;
   }
   .getCourse .getCourse__content .getCourse__side .getCourse__img-two {
-    top: 35%;
-    right: 50%;
+    top: 30%;
+    right: 45%;
     transform: translate(100%, 50%);
     width: 84px;
     height: 84px;
@@ -1908,7 +1908,7 @@ li a {
     padding: 0 20px;
   }
   .course .course__video video {
-    border-radius: 30px;
+    border-radius: 30px 30px 0 0;
   }
   .course .course__info {
     border-radius: 40px;

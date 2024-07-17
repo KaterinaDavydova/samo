@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const togglePlayPause = () => {
             if (video.paused || video.ended) {
+                video.setAttribute('controls', 'controls');
                 video.play();
                 playButton.style.display = 'none';
             } else {
@@ -82,6 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         video.addEventListener('ended', function() {
             playButton.style.display = 'flex';
+            video.removeAttribute('controls');
         });
     });
 });

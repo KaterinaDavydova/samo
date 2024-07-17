@@ -103,22 +103,20 @@ body {
     scroll-behavior: smooth;
     background-color: rgb(255, 255, 255);
 
-
     .wrapper {
-        margin: 0 auto;
         position: relative;
         width: 100%;
         min-height: 100%;
         display: flex;
         flex-direction: column;
         overflow: hidden;
-        max-width: 1440px;
     }
 }
 
 [class*="__container"] {
     position: relative;
-
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 0 130px;
 }
 
@@ -156,7 +154,7 @@ h1 {
     font-family: "Gilroy Medium";
     color: rgb(32, 49, 112);
     line-height: clamp(59px, 7vw, 102px);
-    font-size: clamp(42px, 7vw, 100px);
+    font-size: clamp(56px, 7vw, 100px);
 }
 
 h2 {

@@ -86,8 +86,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-
 // ----- SPLIDE SLIDER -----
 
 const splide = new Splide( '.splide', {

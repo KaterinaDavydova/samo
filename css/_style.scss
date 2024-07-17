@@ -88,7 +88,7 @@
         padding: 10px 10px;
         display: none;
         opacity: 0;
-    transition: opacity 3s ease;
+        transition: opacity 3s ease;
     }
 
     .header__burgerIcon.active .menuIcon {
@@ -106,6 +106,7 @@
     .primary__headline {
         margin-top: 80px;
         text-align: center;
+        font-weight: 500;
     }
 
     .primary__subtitle {
@@ -266,7 +267,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-30%, -32%);
             background: none;
             border: none;
             display: flex;
@@ -283,6 +284,7 @@
             background-image: url("../images/play-btn.svg");
             background-repeat: no-repeat;
             display: inline-block;
+            
         }
 
         & video.playing+.play-button {
@@ -316,8 +318,9 @@
 // ----- INFO-BLOCK SEECTION -----
 
 .info-block {
-    display: flex;
+    display: grid;
     gap: 90px;
+    grid-template-columns: 1fr 1fr 1fr;
 
     .info-item__num {
 
@@ -642,7 +645,7 @@
 
 
         .author__item {
-            color: rgb(102, 112, 133);
+            color: #203170;
             font-family: "Gilroy Medium";
             font-size: 17px;
             font-weight: 500;
@@ -802,7 +805,6 @@
 
     .practices__heading {
         text-align: center;
-        width: 55%;
         margin: 0 auto;
     }
 
@@ -841,7 +843,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-30%, -32%);
             background: none;
             border: none;
             display: flex;
@@ -936,7 +938,7 @@
             .is-active {
                 opacity: 1;
             }
-            
+
         }
 
         .splide__arrow--prev {
@@ -949,7 +951,7 @@
             border-radius: 14px;
             filter: brightness(0) saturate(100%) invert(47%) sepia(86%) saturate(6945%) hue-rotate(229deg) brightness(86%) contrast(88%);
 
-            svg{
+            svg {
                 width: 18px;
                 height: 18px;
             }
@@ -964,7 +966,7 @@
             border-radius: 14px;
             filter: brightness(0) saturate(100%) invert(47%) sepia(86%) saturate(6945%) hue-rotate(229deg) brightness(86%) contrast(88%);
 
-            svg{
+            svg {
                 width: 18px;
                 height: 18px;
             }
@@ -1039,7 +1041,7 @@
     }
 
     .accordion-body li {
-        color: rgb(102, 112, 133);
+        color: #203170;
         font-family: "Gilroy Medium";
         font-size: 16px;
         line-height: 19px;
@@ -1058,12 +1060,10 @@
 
     .arrow {
         transition: transform .2s linear;
-        rotate: -90deg;
+        rotate: 90deg;
         width: 30px;
         height: 30px;
         filter: brightness(0) saturate(100%) invert(97%) sepia(100%) saturate(0%) hue-rotate(24deg) brightness(103%) contrast(105%);
-
-
     }
 
     .accordion:has(.active) .arrow {
@@ -1367,6 +1367,13 @@
 
 // ----- @MEDIA -----
 
+@media (max-width: 1920px) {
+    .footer {
+        .footer__container {
+            max-width: 1920px;
+        }
+    }
+}
 
 @media (max-width: 1200px) {
     .header {
@@ -1485,7 +1492,7 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
 
     .points {
         .points__white_card {
@@ -1704,13 +1711,25 @@
         }
     }
 
+    .getCourse{
+        .getCourse__side{
+            .getCourse__price{
+                margin-right: 4vw;
+            }
+            .getCourse__img-one {
+                transform: translate(-150%, -50%);
+            }
+            .getCourse__img-two {
+                transform: translate(0%, 5%);
+            }
+        }
+    }
+
     .points {
         .points__cards_wrapp {
             grid-template-columns: 1fr;
         }
     }
-
-
 }
 
 @media (max-width: 768px) {
@@ -1766,7 +1785,7 @@
         }
 
         .course__info_block {
-            flex-direction: column;
+            grid-template-columns: 1fr;
             padding: 120px 30px 50px;
             gap: 50px;
         }
@@ -1784,7 +1803,7 @@
         }
 
         .profit__info_block {
-            flex-direction: column;
+            grid-template-columns: 1fr;
 
             .profit__info_item {
                 .profit__info_num {
@@ -2009,7 +2028,7 @@
 
         .info__wrapp {
             gap: 50px;
-            flex-direction: column;
+            grid-template-columns: 1fr;
         }
 
         .info__blue-bl {
@@ -2132,7 +2151,9 @@
             padding: 0 20px;
         }
 
-
+        .primary__headline {
+            letter-spacing: -0.02em;
+        }
     }
 
     .course {
@@ -2253,10 +2274,6 @@
             padding: 0 20px;
         }
 
-        .practices__heading {
-            width: 100%;
-        }
-
         .practices__info {
             padding: 40px 20px;
         }
@@ -2346,6 +2363,10 @@
         }
     }
 
+    .primary {
+        .primary__headline {}
+    }
+
     .info {
         .info__blue-bl {
             padding: 40px 20px;
@@ -2353,6 +2374,34 @@
 
         .info__gradient-bl {
             padding: 120px 20px 40px;
+        }
+    }
+
+    .practices{
+        .practices__title{
+            font-size: 30px;
+        }
+    }
+
+    .getCourse {
+        .getCourse__content {
+            .getCourse__side {
+                .getCourse__img-one {
+                    top: 38%;
+                    right: 35%;
+                    transform: translate(100%, 50%);
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .getCourse__img-two {
+                    top: 37%;
+                    right: 26%;
+                    transform: translate(100%, 50%);
+                    width: 84px;
+                    height: 84px;
+                }
+            }
         }
     }
 

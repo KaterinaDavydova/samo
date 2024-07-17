@@ -101,18 +101,18 @@ body.lock {
   overflow: hidden;
 }
 body .wrapper {
-  margin: 0 auto;
   position: relative;
   width: 100%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  max-width: 1440px;
 }
 
 [class*=__container] {
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 0 130px;
 }
 
@@ -138,7 +138,7 @@ h1 {
   font-family: "Gilroy Medium";
   color: rgb(32, 49, 112);
   line-height: clamp(59px, 7vw, 102px);
-  font-size: clamp(42px, 7vw, 100px);
+  font-size: clamp(56px, 7vw, 100px);
 }
 
 h2 {
@@ -353,6 +353,7 @@ li a {
 .primary .primary__headline {
   margin-top: 80px;
   text-align: center;
+  font-weight: 500;
 }
 .primary .primary__subtitle {
   color: rgb(21, 21, 21);
@@ -484,7 +485,7 @@ li a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-30%, -32%);
   background: none;
   border: none;
   display: flex;
@@ -521,8 +522,9 @@ li a {
 }
 
 .info-block {
-  display: flex;
+  display: grid;
   gap: 90px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .info-block .info-item__num {
   box-sizing: border-box;
@@ -778,7 +780,7 @@ li a {
   gap: 14px;
 }
 .author .author__list .author__item {
-  color: rgb(102, 112, 133);
+  color: #203170;
   font-family: "Gilroy Medium";
   font-size: 17px;
   font-weight: 500;
@@ -905,7 +907,6 @@ li a {
 }
 .practices .practices__heading {
   text-align: center;
-  width: 55%;
   margin: 0 auto;
 }
 .practices .practices__content {
@@ -939,7 +940,7 @@ li a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-30%, -32%);
   background: none;
   border: none;
   display: flex;
@@ -1102,7 +1103,7 @@ li a {
   gap: 20px;
 }
 .program .accordion-body li {
-  color: rgb(102, 112, 133);
+  color: #203170;
   font-family: "Gilroy Medium";
   font-size: 16px;
   line-height: 19px;
@@ -1119,7 +1120,7 @@ li a {
 }
 .program .arrow {
   transition: transform 0.2s linear;
-  rotate: -90deg;
+  rotate: 90deg;
   width: 30px;
   height: 30px;
   filter: brightness(0) saturate(100%) invert(97%) sepia(100%) saturate(0%) hue-rotate(24deg) brightness(103%) contrast(105%);
@@ -1360,6 +1361,11 @@ li a {
 .popup__bl .popup input:focus + .label__text {
   color: rgb(32, 49, 112);
 }
+@media (max-width: 1920px) {
+  .footer .footer__container {
+    max-width: 1920px;
+  }
+}
 @media (max-width: 1200px) {
   .header .header__logo {
     width: 19vw;
@@ -1421,7 +1427,7 @@ li a {
     padding: 30px 40px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .points .points__white_card .points__note .points__note-pic {
     max-width: 138px;
     height: 179px;
@@ -1573,6 +1579,15 @@ li a {
   .profit .profit__info_block .profit__info_item .profit__info_num .item-line {
     width: 225px;
   }
+  .getCourse .getCourse__side .getCourse__price {
+    margin-right: 4vw;
+  }
+  .getCourse .getCourse__side .getCourse__img-one {
+    transform: translate(-150%, -50%);
+  }
+  .getCourse .getCourse__side .getCourse__img-two {
+    transform: translate(0%, 5%);
+  }
   .points .points__cards_wrapp {
     grid-template-columns: 1fr;
   }
@@ -1617,7 +1632,7 @@ li a {
     margin-bottom: 30px;
   }
   .course .course__info_block {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     padding: 120px 30px 50px;
     gap: 50px;
   }
@@ -1631,7 +1646,7 @@ li a {
     margin-bottom: 50px;
   }
   .profit .profit__info_block {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
   .profit .profit__info_block .profit__info_item .profit__info_num .item-line {
     border-bottom: none;
@@ -1794,7 +1809,7 @@ li a {
   }
   .info .info__wrapp {
     gap: 50px;
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
   .info .info__blue-bl {
     border-radius: 40px;
@@ -1878,6 +1893,9 @@ li a {
   .primary .primary__container {
     padding: 0 20px;
   }
+  .primary .primary__headline {
+    letter-spacing: -0.02em;
+  }
   .course .course__container {
     padding: 0 20px;
   }
@@ -1945,9 +1963,6 @@ li a {
   .practices .practices__container {
     padding: 0 20px;
   }
-  .practices .practices__heading {
-    width: 100%;
-  }
   .practices .practices__info {
     padding: 40px 20px;
   }
@@ -2010,6 +2025,23 @@ li a {
   }
   .info .info__gradient-bl {
     padding: 120px 20px 40px;
+  }
+  .practices .practices__title {
+    font-size: 30px;
+  }
+  .getCourse .getCourse__content .getCourse__side .getCourse__img-one {
+    top: 38%;
+    right: 35%;
+    transform: translate(100%, 50%);
+    width: 40px;
+    height: 40px;
+  }
+  .getCourse .getCourse__content .getCourse__side .getCourse__img-two {
+    top: 37%;
+    right: 26%;
+    transform: translate(100%, 50%);
+    width: 84px;
+    height: 84px;
   }
   .footer .footer__container {
     padding: 50px 20px;

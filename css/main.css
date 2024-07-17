@@ -963,6 +963,16 @@ li a {
 .practices .practices__video video.playing + .play-button {
   display: none;
 }
+.practices .practices__video video::-webkit-media-controls-play-button,
+.practices .practices__video video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+.practices .practices__video video::-moz-media-controls-play-button {
+  display: none !important;
+}
+.practices .practices__video video::-ms-media-controls-play-button {
+  display: none !important;
+}
 .practices .practices__info {
   padding: 40px;
 }

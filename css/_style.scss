@@ -868,6 +868,17 @@
         & video.playing+.play-button {
             display: none;
         }
+
+        video::-webkit-media-controls-play-button,
+        video::-webkit-media-controls-start-playback-button {
+            display: none !important;
+        }
+        video::-moz-media-controls-play-button {
+            display: none !important;
+        }
+        video::-ms-media-controls-play-button {
+            display: none !important;
+        }
     }
 
     .practices__info {

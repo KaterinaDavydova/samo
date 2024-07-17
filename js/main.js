@@ -61,6 +61,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         };
 
+        const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobileDevice) {
+            video.addEventListener('click', () => {
+                if (!video.paused) {
+                    video.pause();
+                    playButton.style.display = 'flex';
+                }
+            });
+        }
+
         playButton.addEventListener('click', togglePlayPause);
 
         video.addEventListener('play', function() {

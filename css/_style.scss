@@ -243,7 +243,8 @@
 // ----- COURSE SEECTION -----
 
 .course {
-    margin-top: 120px;
+    margin-top: 80px;
+    padding-top: 40px;
 
     .course__heading {
         text-align: center;
@@ -418,7 +419,8 @@
 // ----- POINTS SEECTION -----
 
 .points {
-    margin-top: 120px;
+    margin-top: 80px;
+    padding-top: 40px;
 
     .points__heading {
         margin-bottom: 50px;
@@ -800,8 +802,9 @@
 }
 
 .practices {
-
-    margin-top: 120px;
+    
+    margin-top: 80px;
+    padding-top: 40px;
 
     .practices__heading {
         text-align: center;
@@ -886,7 +889,8 @@
 
 .feedback {
 
-    margin-top: 120px;
+    margin-top: 80px;
+    padding-top: 40px;
 
     .feedback__heading {
         margin-bottom: 40px;
@@ -1778,7 +1782,8 @@
     }
 
     .course {
-        margin-top: 80px;
+        margin-top: 50px;
+        padding-top: 30px;
 
         .course__heading {
             margin-bottom: 30px;
@@ -1827,7 +1832,8 @@
     }
 
     .points {
-        margin-top: 80px;
+        margin-top: 50px;
+        padding-top: 30px;
 
         .points-card {
             padding: 40px 30px 30px;
@@ -1956,7 +1962,8 @@
     }
 
     .practices {
-        margin-top: 80px;
+        margin-top: 50px;
+        padding-top: 30px;
 
         .practices__content {
             flex-direction: column;
@@ -1969,7 +1976,8 @@
     }
 
     .feedback {
-        margin-top: 80px;
+        margin-top: 50px;
+        padding-top: 30px;
 
         .splide {
             .splide__list {

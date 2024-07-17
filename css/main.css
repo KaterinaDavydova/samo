@@ -462,7 +462,8 @@ li a {
 }
 
 .course {
-  margin-top: 120px;
+  margin-top: 80px;
+  padding-top: 40px;
 }
 .course .course__heading {
   text-align: center;
@@ -597,7 +598,8 @@ li a {
 }
 
 .points {
-  margin-top: 120px;
+  margin-top: 80px;
+  padding-top: 40px;
 }
 .points .points__heading {
   margin-bottom: 50px;
@@ -903,7 +905,8 @@ li a {
 }
 
 .practices {
-  margin-top: 120px;
+  margin-top: 80px;
+  padding-top: 40px;
 }
 .practices .practices__heading {
   text-align: center;
@@ -974,7 +977,8 @@ li a {
 }
 
 .feedback {
-  margin-top: 120px;
+  margin-top: 80px;
+  padding-top: 40px;
 }
 .feedback .feedback__heading {
   margin-bottom: 40px;
@@ -1626,7 +1630,8 @@ li a {
     gap: 20px;
   }
   .course {
-    margin-top: 80px;
+    margin-top: 50px;
+    padding-top: 30px;
   }
   .course .course__heading {
     margin-bottom: 30px;
@@ -1661,7 +1666,8 @@ li a {
     margin: 0 auto;
   }
   .points {
-    margin-top: 80px;
+    margin-top: 50px;
+    padding-top: 30px;
   }
   .points .points-card {
     padding: 40px 30px 30px;
@@ -1757,7 +1763,8 @@ li a {
     display: none;
   }
   .practices {
-    margin-top: 80px;
+    margin-top: 50px;
+    padding-top: 30px;
   }
   .practices .practices__content {
     flex-direction: column;
@@ -1767,7 +1774,8 @@ li a {
     margin-top: 20px;
   }
   .feedback {
-    margin-top: 80px;
+    margin-top: 50px;
+    padding-top: 30px;
   }
   .feedback .splide .splide__list .splide__slide {
     width: 50%;

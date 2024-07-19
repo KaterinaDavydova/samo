@@ -285,7 +285,7 @@
             background-image: url("../images/play-btn.svg");
             background-repeat: no-repeat;
             display: inline-block;
-            
+
         }
 
         & video.playing+.play-button {
@@ -634,7 +634,7 @@
         color: rgb(32, 49, 112);
         font-family: "Gilroy Semibold";
         line-height: 61px;
-        font-size: clamp(31px, 4vw, 60px);
+        font-size: clamp(31px, 4.17vw, 60px);
         margin-top: 10px;
     }
 
@@ -802,7 +802,7 @@
 }
 
 .practices {
-    
+
     margin-top: 80px;
     padding-top: 40px;
 
@@ -867,17 +867,6 @@
 
         & video.playing+.play-button {
             display: none;
-        }
-
-        video::-webkit-media-controls-play-button,
-        video::-webkit-media-controls-start-playback-button {
-            display: none !important;
-        }
-        video::-moz-media-controls-play-button {
-            display: none !important;
-        }
-        video::-ms-media-controls-play-button {
-            display: none !important;
         }
     }
 
@@ -1351,7 +1340,6 @@
     }
 
     .popup input {
-        color: rgba(182, 182, 182);
         font-family: "Gilroy Semibold";
         font-size: 17px;
         line-height: 30px;
@@ -1609,7 +1597,7 @@
             display: flex;
             flex-direction: column;
             text-align: left;
-            height: calc(100vh - 100px);
+            height: calc(100vh - 120px);
             justify-content: start;
             gap: 10px;
             padding: 30px;
@@ -1726,14 +1714,16 @@
         }
     }
 
-    .getCourse{
-        .getCourse__side{
-            .getCourse__price{
+    .getCourse {
+        .getCourse__side {
+            .getCourse__price {
                 margin-right: 4vw;
             }
+
             .getCourse__img-one {
                 transform: translate(-150%, -50%);
             }
+
             .getCourse__img-two {
                 transform: translate(0%, 5%);
             }
@@ -1890,6 +1880,19 @@
             gap: 20px;
         }
 
+        .author__desc {
+            display: flex;
+            justify-content: center;
+        }
+
+        .author__heading {
+            display: flex;
+            justify-content: center;
+            line-height: 51px;
+            margin-top: 0;
+            font-size: clamp(31px, 9.17vw, 60px);
+        }
+
         .author__photo {
             max-width: 280px;
         }
@@ -1900,6 +1903,7 @@
 
         .author__btn {
             max-width: 388px;
+            margin: 0 auto;
         }
 
     }
@@ -2221,7 +2225,7 @@
                 overflow: hidden;
 
                 .points__note-pic {
-
+                    height: 357px;
                     max-width: 195px;
                     left: 50%;
                     transform: translate(-50%, 35%);
@@ -2296,6 +2300,19 @@
         }
     }
 
+    .points {
+        .points__white_card {
+
+            .points__note {
+
+                .points__note-pic {
+
+                    transform: translate(-50%, 40%);
+                }
+            }
+        }
+    }
+
     .feedback {
         .feedback__container {
             padding: 0 20px;
@@ -2346,7 +2363,7 @@
 
     .footer {
         .footer__container {
-            padding: 50px 20px;
+            padding: 50px 20px 20px;
         }
 
         .footer__logo {
@@ -2380,10 +2397,6 @@
         }
     }
 
-    .primary {
-        .primary__headline {}
-    }
-
     .info {
         .info__blue-bl {
             padding: 40px 20px;
@@ -2394,8 +2407,8 @@
         }
     }
 
-    .practices{
-        .practices__title{
+    .practices {
+        .practices__title {
             font-size: 30px;
         }
     }

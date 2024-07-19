@@ -357,6 +357,7 @@
 
     .info-item__title {
         margin-bottom: 20px;
+        font-weight: 300;
     }
 }
 
@@ -702,6 +703,7 @@
         .getCourse__title {
             margin-bottom: 25px;
             font-size: 38px;
+            font-weight: 300;
             line-height: 120%;
             font-size: clamp(29px, 4vw, 38px);
         }
@@ -2056,6 +2058,7 @@
 
         .info__blue-bl {
             border-radius: 40px;
+            background: radial-gradient(50% 50% at 50% 50%, rgba(38, 255, 255, 0.03), rgba(32, 49, 112, 0.15) 100%), rgb(32, 49, 112);
         }
 
         .info__gradient-bl {

@@ -261,7 +261,7 @@
                             <li class="author__item ">Професійна членкиня International Breathwork Foundation (IBF)</li>
                             <li class="author__item ">Членкиня Європейської Трансперсональної Асоціації (EUROTAS)</li>
                         </ul>
-                        <a href="https://samo.com.ua/evgeniya-serbinova/" class="author__btn btn">Детальніше про куратора</a>
+                        <a href="https://samo.com.ua/evgeniya-serbinova/" target="_blank" class="author__btn btn">Детальніше про куратора</a>
                     </div>
                 </div>
             </section>
@@ -290,8 +290,7 @@
                                 проблеми та страхи</p>
                         </div>
 
-                        <p class="getCourse__side-text"> Натисніть кнопку вище і виконуйте інструкції щоб почати
-                            програму
+                        <p class="getCourse__side-text"> Натисніть кнопку вище і виконуйте інструкції щоб почати програму
                         </p>
                     </div>
                 </div>
@@ -664,24 +663,39 @@
             <!----- POPUP ----->
             <div class="popup__bl">
                 <div class="popup__bg">
-                    <form class="popup">
+                    <form class="popup" action="/?form=buycourse" method="post" id="buyform">
                         <div class="popup__form">
                             <h3 class="popup__heading">Реєстрація на курс</h3>
                             <img src="images/close.svg" class="close-popup" alt="close">
                             <label>
-                                <input type="text" name="name" placeholder="Ваше ім`я" autocomplete="given-name">
+                                <input type="text" name="name" id="name" placeholder="Ваше ім`я" autocomplete="given-name">
                                 <div class="label__text">
                                     Ім`я
                                 </div>
                             </label>
                             <label>
-                                <input type="text" name="email" placeholder="name@mail.com" autocomplete="on">
+                                <input type="text" name="email" id="email" placeholder="name@mail.com" autocomplete="on">
                                 <div class="label__text">
                                     Email
                                 </div>
                             </label>
+                            <input type="hidden" name="course" value="2">
+                            <input type="hidden" name="timezone" id="timezone" value="-180">
                             <button type="submit" class="btn">Придбати курс</button>
                         </div>
+
+<script>
+    var date = new Date();
+    document.getElementById('timezone').value = date.getTimezoneOffset();
+    document.getElementById('buyform').onsubmit = function()
+        {
+            if (!document.getElementById('name').value) {alert('Будь ласка, введіть своє ім’я.'); return false;}
+            if (!document.getElementById('email').value.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/)) {alert('Будь ласка, введіть адресу своєї електронної пошти.'); return false;}
+            return true;
+        };
+</script>
+
+
                         <div class="popup__info">
                             <div class="popup__img">
                                 <img src="images/popup-img.png" alt="image">
@@ -723,15 +737,17 @@
                     </div>
                     <a href="#" class="footer__btn-mob btn open-popup">Придбати курс</a>
                     <div class="footer__socialMedia">
-                        <a class="footer__link link" href="https://www.facebook.com/30DaysCourse/">
+                        <a class="footer__link link" href="https://www.facebook.com/samousvidomlennya/" target="_blank">
                             <img class="footer__icon" src="images/fb.svg" alt="facebook">
                         </a>
-                        <a class="footer__link link" href="https://www.youtube.com/c/Центрпсихологіїсамоусвідомлення">
+                        <a class="footer__link link" href="https://www.youtube.com/c/Центрпсихологіїсамоусвідомлення" target="_blank">
                             <img class="footer__icon" src="images/youtube.svg" alt="youtube">
                         </a>
-                        <a class="footer__link link" href="https://www.instagram.com/samousvidomlennya/">
+<!--
+                        <a class="footer__link link" href="https://www.instagram.com/samousvidomlennya/" target="_blank">
                             <img class="footer__icon" src="images/instagram.svg" alt="instagram">
                         </a>
+-->
                     </div>
                     <span class="footer__text">© Розробник курсу «Центр психології самоусвідомлення»</span>
                 </div>

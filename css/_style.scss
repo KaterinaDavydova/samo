@@ -898,13 +898,13 @@
         margin-bottom: 40px;
     }
 
-    .feedback__slide-name{
+    .feedback__slide-name {
         color: rgb(32, 49, 112);
     }
 
     .splide {
         position: relative;
-        
+
         .splide__track {
             overflow: hidden;
             height: 500px;
@@ -1308,7 +1308,7 @@
     }
 
     .popup.active {
-        transform: translate(-50%, -55%) scale(0.8);
+        transform: translate(-50%, -58%) scale(0.8);
         transition: 0.5s all;
     }
 
@@ -1993,7 +1993,7 @@
         padding-top: 30px;
 
         .splide {
-            
+
             .splide__list {
                 .splide__slide {
                     width: calc(100% / 2);
@@ -2115,11 +2115,11 @@
         }
 
         .popup__form {
-            padding: 40px 30px;
+            padding: 30px;
             border-radius: 30px 30px 0px 0px;
 
             .popup__heading {
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
         }
 
@@ -2320,7 +2320,7 @@
 
         .splide {
 
-            .splide__track{
+            .splide__track {
                 height: 600px;
             }
 
@@ -2446,4 +2446,15 @@
     }
 }
 
-@media (max-width: 340px) {}
+@media (max-width: 340px) {
+
+    .popup__bl {
+
+        .popup__info {
+
+            .popup__title {
+                font-size: 22px;
+            }
+        }
+    }
+}

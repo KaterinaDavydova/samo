@@ -94,15 +94,12 @@ const splide = new Splide( '.splide', {
     type   : 'loop',
     perPage: 3,
     pagination: false,
-    perMove: 1,
+    perMove: 3,
     gap: '17px',
-    fixedWidth: "382px",
     breakpoints: {
         1200: { perPage: 2 },
-        768 : { perPage: 2, fixedWidth: "335px"},
-        480: {perPage: 1, fixedWidth: "335px"},
-        390 : { perPage: 1, fixedWidth: "335px" },
-        340 : { perPage: 1, fixedWidth: "300px" },
+        600 : { perPage: 1},
+        320 : { perPage: 1, fixedWidth: "280px" },
     },
 } ) .mount();
 

@@ -98,7 +98,7 @@ const splide = new Splide( '.splide', {
     gap: '17px',
     breakpoints: {
         1200: { perPage: 2 },
-        600 : { perPage: 1},
+        768 : { perPage: 1},
         320 : { perPage: 1, fixedWidth: "280px" },
     },
 } ) .mount();

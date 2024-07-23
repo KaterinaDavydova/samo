@@ -1805,7 +1805,7 @@ li a {
     top: inherit;
     bottom: -20%;
     right: 50%;
-    transform: translate(20%, 0%);
+    transform: translate(0%, 0%);
   }
   .program {
     margin-top: 150px;
@@ -1994,6 +1994,9 @@ li a {
   .feedback .feedback__container {
     padding: 0 20px;
   }
+  .feedback .splide .splide__track {
+    height: 600px;
+  }
   .feedback .splide .splide__arrow--next {
     top: auto;
     bottom: 0%;
@@ -2003,7 +2006,7 @@ li a {
   .feedback .splide .splide__arrow--prev {
     top: auto;
     left: 50%;
-    transform: translate(120%, -180%);
+    transform: translate(-100%, 180%);
     bottom: 0%;
   }
   .feedback .splide .splide__slide {

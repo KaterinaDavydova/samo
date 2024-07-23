@@ -94,7 +94,7 @@ const splide = new Splide( '.splide', {
     type   : 'loop',
     perPage: 3,
     pagination: false,
-    perMove: 3,
+    perMove: 1,
     gap: '17px',
     breakpoints: {
         1200: { perPage: 2 },
